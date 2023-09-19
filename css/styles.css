@@ -51,15 +51,21 @@ a {
 
 .contacts-link {
     font-size: 16px;
-    line-height: 1.17;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-body-text);
 }
 
-.header-link:active,
-.contacts-link:active {
+.header-link:hover,
+.contacts-link:hover {
     color: var(--color-pressed-state);
 }
+
+.header-link:focus,
+.contacts-link:focus {
+    color: var(--color-pressed-state);
+}
+
 /* END Header */
 
 /* Hero-section */
@@ -93,10 +99,16 @@ a {
 .hero-button:hover {
     background-color: var(--color-pressed-state);
 }
+
+.hero-button:focus {
+    color: var(--color-pressed-state);
+}
+
 /* END Hero-section */
 
 /* Advantage-section*/
-.visually-hidden {
+
+/*.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -107,7 +119,8 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+}*/
+
 
 .benefit-title {
     color: var(--color-navy-blue);
